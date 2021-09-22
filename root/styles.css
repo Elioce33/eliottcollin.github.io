@@ -1,0 +1,10 @@
+body {
+    background-color: rgb(194, 241, 194);
+    width: 99%;
+    height: 99%;
+    position: absolute;
+}
+
+h1 {
+    text-align: center;
+}
