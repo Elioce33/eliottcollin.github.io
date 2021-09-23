@@ -1,10 +1,80 @@
 body {
-    background-color: rgb(194, 241, 194);
-    width: 99%;
-    height: 99%;
-    position: absolute;
+    background: linear-gradient(lightgreen, lightpink);
 }
 
-h1 {
+header {
+    height: 100px;
+    border-radius: 50px 50px 0px 0px;
     text-align: center;
+    /* position: sticky; */
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+    border-top: 5px solid black;
+    margin-bottom: 150px;
+    box-shadow: 0px -60px 30px 20px black;
+}
+
+header img {
+    width: 300px;
+    display: inline;
+    position: absolute;
+    left:0;
+    top: -10px;
+}
+
+header h1 {
+    font-size: 3em;
+    padding-top: 10px;
+}
+
+footer {
+    text-align: center;
+    border-radius: 20px;
+    /* background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)); */
+    background-color: rgba(0, 48, 121, 0.2);
+    border: 2px solid rgb(0, 119, 255);
+    width: 60%;
+    margin: auto;
+    padding: 1%;
+    margin-top: 3%;
+}
+
+footer span {
+    margin: auto;
+}
+
+section {
+    /* width: 68%; */
+    background-color: rgba(0, 164, 230, 0.2);
+    box-shadow: 0px 0px 20px 10px rgba(0, 164, 230, 0.2);
+
+    /* border: 1px solid black; */
+    
+    margin-left: 25%;
+    margin-right: 10%;
+    margin-top: 3%;
+    padding: 1%;
+}
+
+section h2 {
+    margin-left: 30%;
+}
+
+section h3 {
+    margin-left: 2%;
+}
+
+section p {
+    margin-left: 5%;
+}
+
+
+.description {
+    background-color: rgba(0, 48, 121, 0.1);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 48, 121, 0.1);
+    width: 18%;
+    margin-left: 1%;
+    margin-top: -50px;
+    position: fixed;
+    padding: 1%;
 }
