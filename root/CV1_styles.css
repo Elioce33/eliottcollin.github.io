@@ -1,0 +1,53 @@
+body {
+    width: 99.1%;
+    height: 99.1%;
+    position: absolute;
+}
+
+.profil-contener {
+    background-image: url(images/bg-foret.JPG);
+    background-size: cover;
+    border: 5px solid rgba(3, 252, 107, 0.247);
+    height: 85%;
+    width: 85%;
+    margin: 5%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.profil-content {
+    margin: auto;
+    padding: 3%;
+    max-width: 35%;
+    max-height: 35%;
+    
+    background: rgba(0, 14, 22, 0.486);
+    box-shadow: 0px 0px 20px 10px rgba(29, 104, 6, 0.432);
+}
+
+#profilPic {
+    width: 150px;
+    background: rgba(5, 8, 204, 0.329);
+    border: 5px solid rgba(13, 6, 110, 0.158);
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+.profil-content * {
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.profil-nom {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.profil-description-perso {
+    font-style: italic;
+}
+
