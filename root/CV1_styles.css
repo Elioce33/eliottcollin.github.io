@@ -27,7 +27,7 @@ body {
 }
 
 #profilPic {
-    width: 150px;
+    width: 50%;
     background: rgba(5, 8, 204, 0.329);
     border: 5px solid rgba(13, 6, 110, 0.158);
     border-radius: 50%;
