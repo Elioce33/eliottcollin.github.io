@@ -2,18 +2,26 @@ body {
     width: 99.1%;
     height: 99.1%;
     position: absolute;
+    background-color: rgb(46, 75, 170);
 }
 
-.profil-contener {
-    background-image: url(images/bg-foret.JPG);
-    background-size: cover;
-    border: 5px solid rgba(3, 252, 107, 0.247);
+.contener {
     height: 85%;
     width: 85%;
     margin: 5%;
 
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.301);
+    background-color: rgb(59, 97, 223);
+    
     display: flex;
     justify-content: center;
+}
+
+.profil {
+    background-image: url(images/bg-foret.JPG);
+    background-size: cover;
+    background-position: center;
+    border: 5px solid rgba(3, 252, 107, 0.247);
 }
 
 .profil-content {
@@ -35,6 +43,12 @@ body {
     background-size: cover;
 }
 
+#profilPic:hover {
+    background: rgba(5, 8, 204, 0.226);
+    border: 5px solid rgba(13, 6, 110, 0.384);
+    box-shadow: 5px 5px 10px 1px black;
+}
+
 .profil-content * {
     display: block;
     margin: auto;
@@ -51,3 +65,28 @@ body {
     font-style: italic;
 }
 
+.projets {
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.301);
+    background-color: rgb(60, 93, 201);
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projet-exemple {
+    background-color: rgb(18, 13, 88);
+    border: 2px solid rgb(120, 21, 187);
+    color: white;
+    text-align: center;
+
+    /* height: 40%; */
+    width: 25%;
+    margin: 2%;
+    /* flex: initial; */
+}
+
+footer, header{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(8, 28, 94);
+}
