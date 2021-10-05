@@ -169,6 +169,10 @@ nav li a:hover {
     background-image: url("images/languageC.png");
 }
 
+#html-css-js {
+    background-image: url("images/hjc.png");
+}
+
 footer {
     height: 50px;
     width: 100%;
