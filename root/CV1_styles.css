@@ -1,8 +1,61 @@
 body {
-    width: 99.1%;
-    height: 99.1%;
+    width: 100%;
+    height: 100%;
     position: absolute;
+    margin: 0;
     background-color: rgb(46, 75, 170);
+}
+
+header  {
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+nav {
+    width: 100%;
+    background-color: rgb(8, 28, 94);
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    padding: 1em 0;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li:first-child {
+    margin: auto;
+    margin-left: 3em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding-right: 3em;
+    position: relative;
+}
+
+nav li a::after {
+    content: ''; /* ??? */
+    position: absolute;
+    display: block;
+    height: 0.4em;
+    width: 00%;
+    background-color: rgb(0, 183, 255);
+    bottom: -1em;
+    transition: all ease-in-out 150ms;
+}
+
+nav li a:hover::after {
+    width: 60%;
+}
+
+nav li a:hover {
+    color: rgb(0, 183, 255);
 }
 
 .contener {
@@ -18,6 +71,7 @@ body {
 }
 
 .profil {
+    margin-top: 80px;
     background-image: url(images/bg-foret.JPG);
     background-size: cover;
     background-position: center;
@@ -48,6 +102,7 @@ body {
     border: 5px solid rgba(13, 6, 110, 0.384);
     box-shadow: 5px 5px 10px 1px black;
     transition: 0.5s;
+    transform: rotate(1turn);
 }
 
 .profil-content * {
@@ -84,7 +139,7 @@ body {
     transition: 0.5s;
 }
 
-.projets {
+#Langages {
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.301);
     background-color: rgb(60, 93, 201);
 
@@ -92,24 +147,40 @@ body {
     flex-wrap: wrap;
 }
 
-.projet-exemple {
+#Langages a{
     background-color: rgb(18, 13, 88);
     border: 2px solid rgb(120, 21, 187);
     color: white;
     text-align: center;
 
-    min-height: 200px;
-    min-width: 25%;
-    margin: 2%;
+    height: 30%;
+    min-width: 30%;
+    margin: auto;
 }
 
-header {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 5px;
+#Langages a:hover{
+    box-shadow: 0px 20px 5px 2px rgba(0, 0, 0, 0.3);
+    transition: 0.2s;
+    transform: translate(0px, -20px);
 }
 
-footer, header{
+#Langages a .content {
+    margin: auto;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* border: 1px solid white; */
+}
+
+#langageC {
+    background-image: url("images/languageC.png");
+}
+
+#html-css-js {
+    background-image: url("images/hjc.png");
+}
+
+footer {
     height: 50px;
     width: 100%;
     background-color: rgb(8, 28, 94);
