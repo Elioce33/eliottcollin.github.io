@@ -15,12 +15,14 @@
 }
 
 .theme-dark {
-  --background-primary:           rgba(0, 0, 0, 0) !important;
-  --background-secondary:         rgba(0, 0, 0, 0) !important;
-  --background-tertiary:          rgba(0, 0, 0, 0) !important;
-  --deprecated-panel-background:  rgba(0, 0, 0, 0) !important;
-  --channeltextarea-background:   rgba(0, 0, 0, 0) !important;
-  --default-background-image:       url(https://cdn.discordapp.com/attachments/654790465505329169/1179466990549737495/deep_sea_monster.jpg) !important;
+  --background-primary:         rgba(0, 0, 0, 0) !important;
+  --background-secondary:       rgba(0, 0, 0, 0) !important;
+  --background-tertiary:        rgba(0, 0, 0, 0) !important;
+  --deprecated-panel-background:rgba(0, 0, 0, 0) !important;
+  --channeltextarea-background: rgba(0, 0, 0, 0) !important;
+  --default-background-image:    url(https://cdn.discordapp.com/attachments/654790465505329169/1179466990549737495/deep_sea_monster.jpg) !important;
+  --body-background-blur:        blur(0px);
+  --body-background-brightness:  brightness(70%);
 }
 
 .app-2rEoOp {
@@ -78,7 +80,7 @@ body {
 
   background-position: center !important;
   background-size: cover !important;
-  backdrop-filter: brightness(70%) blur(0px);
+  backdrop-filter: var(--body-background-brightness) var(--body-background-blur);
 }
 
 .theme-dark { /* fix background theme color */
