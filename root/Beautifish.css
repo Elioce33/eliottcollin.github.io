@@ -1,0 +1,653 @@
+/* *********************************** 
+ *        Transparent discord        *
+ * ********************************* */
+
+/* source : https://gist.github.com/cheesits456/89b4f192fd26239212f5d17ac2699abc */
+
+.da-scrollerWrap .da-scroller::-webkit-scrollbar-thumb {
+  background-color: #2c75ff !important;
+  border-color: #091833 !important;
+}
+
+.theme-dark .da-scrollerWrap .da-scroller::-webkit-scrollbar-track-piece {
+  background-color: #1e0011 !important;
+  border-color: #091833 !important;
+}
+
+.theme-dark {
+  --background-primary:         rgba(0, 0, 0, 0) !important;
+  --background-secondary:       rgba(0, 0, 0, 0) !important;
+  --background-tertiary:        rgba(0, 0, 0, 0) !important;
+  --deprecated-panel-background:rgba(0, 0, 0, 0) !important;
+  --channeltextarea-background: rgba(0, 0, 0, 0) !important;
+  --default-background-image:    url(https://i.imgur.com/Po6f4N1.jpg) !important;
+  --body-background-blur:        blur(0px);
+  --body-background-brightness:  brightness(70%);
+}
+
+.app-2rEoOp {
+  background-color: rgba(9, 24, 51, 0);
+}
+
+.bg-h5JY_x {
+  background-color: rgba(9, 24, 51, 0);
+}
+
+/* *********************************** 
+ *        Transparent discord        *
+ * ********************************* */
+
+
+:root {
+/*  box that contains pinned msg, emoji, gif, etc. */
+  --cstm-box: rgba(32, 68, 82, 0.7);
+
+  --cstm-box-dark: rgba(11, 23, 36, 0.5);
+  --cstm-box-light: rgba(33, 72, 89, 0.5);
+
+/*  borders */
+  --cstm-border-dark: 2px solid rgb(25, 158, 94);
+  --cstm-border-light: 2px solid rgb(94, 238, 206);
+
+/*  primary */
+  --cstm-primary: rgba(54, 80, 165, 0.4);
+  --cstm-primary-opaque: rgb(54, 134, 165);
+  --cstm-primary-dark: rgba(10, 18, 29, 0.6);
+  --cstm-primary-dark-opaque: rgb(10, 18, 29);
+  --cstm-primary-light: rgba(25, 158, 94, 0.6);
+
+/*  secondary */
+  --cstm-secondary: rgb(18, 114, 70);
+  --cstm-secondary-dark: rgba(14, 85, 61, 0.6);
+  --cstm-secondary-light: rgba(49, 255, 177, 0.6);
+
+  --cstm-input-text: rgba(42, 220, 150, 0.575);
+  --cstm-input-text-dark: rgba(14, 85, 61, 0.575);
+  --cstm-very-light-transparent: rgba(49, 255, 177, 0.3);
+
+  --cstm-important: rgb(34, 155, 100);
+  --cstm-important-dark: rgb(8, 37, 25);
+  --cstm-important-transparent: rgba(56, 249, 190, 0.2);
+  --cstm-important-transparent-dark: rgb(25, 102, 68, 0.8);
+  --cstm-important-secondary: rgb(49, 255, 177);
+  --cstm-important-secondary-transparent: rgba(49, 255, 177, 0.4);
+}
+
+
+body {
+	background: #fff var(--default-background-image);
+
+  background-position: center !important;
+  background-size: cover !important;
+  backdrop-filter: var(--body-background-brightness) var(--body-background-blur);
+}
+
+.theme-dark { /* fix background theme color */
+  --background-secondary-alt: none;
+}
+
+/* forum page */
+.container-3wLKDe {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.inline { /* message ecrit comme ça : `console.log("du code")`*/
+  background-color: var(--cstm-secondary-light) !important;
+}
+
+.inlineCode-ERyvy_ { /* message ecrit comme ça : `console.log("du code")`*/
+  background-color: rgba(78, 78, 78, 0.5) !important;
+  border-radius: 5px;
+}
+
+.channelTextArea-1FufC0 { /* zone d'ecriture / input text */
+  background-color: var(--cstm-very-light-transparent);
+  box-shadow: 0px 0px 20px 0px var(--cstm-secondary);
+}
+
+.channelTextArea-1FufC0 .placeholder-1rCBhr { /* place holder */
+  color: darkgray;
+}
+
+/* title bar */
+.title-31SJ6t, .container-ZMc96U {
+  box-shadow: 0px 15px 10px -15px black;
+}
+
+.title-31SJ6t, .container-1-ERn5, .scroller-3X7KbA, .typeWindows-2-g3UY, .searchBar-3TnChZ, .container-ZMc96U {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+.withFrame-2dL45i {
+  padding-top: 4px;
+  margin-top: 0 !important;
+}
+
+.container-18GwIk, /* popup des thread */
+.messagesPopoutWrap-3zryHW, /* pin msg */
+.contentWrapper-3vHNP2, /* emoji/gif/autocolan popup */
+.container-2ebMPP /* message reception box  */
+{ 
+  background-color: var(--cstm-box);
+  backdrop-filter: blur(6px) !important;
+}
+
+.layer-2BGhQ8 .channelHeader-DFRX8q {
+  background-color: var(--cstm-primary-dark);
+  border-radius: 5px;
+}
+
+
+/* emoji search bar */
+.searchBar-2M9mRP .inner-1NoIT5 {
+  background-color: var(--cstm-input-text-dark);
+}
+
+/* gif search bar */
+.searchBar-3aIzc- .inner-2pOSmK {
+  background-color: var(--cstm-input-text-dark);
+}
+
+/* autocolant search bar */
+.inner-1NoIT5 {
+  background-color: var(--cstm-input-text-dark);
+}
+
+/* thread search bar */
+.searchBox-3IjAC1 {
+  background-color: var(--cstm-input-text-dark);
+}
+
+.inspector-DFKXwB, .unicodeShortcut-3N8oDe, .standardStickerShortcut-ObSns3 { /* emoji selected */
+  background-color: var(--cstm-box-light);
+}
+
+.scroller-2MALzE {
+  height: 88%; /* don't set "auto" this cause lag*/
+}
+
+.messagesWrapper-RpOMA3 { /* message list */
+  margin-bottom: 8px;
+}
+
+.container-18GwIk .header-3_zmOb, .messagesPopoutWrap-3zryHW .header-1w9Q93 { /*header des thread et pin msg popup*/
+  background-color: var(--cstm-box-dark); 
+}
+
+.container-2rzKKA {
+  background-color: var(--cstm-box-dark);
+  border: var(--cstm-border-light); 
+  border-radius: 20px;
+}
+
+.container-2rzKKA:hover {
+  background-color: var(--cstm-box-light);
+  border: var(--cstm-border-dark); 
+}
+
+.messageGroupWrapper-1jf_7C { /* pinned message items*/
+  background-color: var(--cstm-box-light);
+  border: var(--cstm-border-light);
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+.messageGroupWrapper-1jf_7C:hover {
+  background-color: var(--cstm-box-dark);
+  border: var(--cstm-border-dark);
+}
+
+
+.name-3BUDLf { /* titre de section */
+  color: var(--cstm-important);
+}
+
+.scroller-1ox3I2 { /* liste des channel */
+  height: 92.8%;
+}
+
+.panels-3wFtMD { /* Zone utilisateur (en bas de la list des channel)*/
+  /* background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)); */
+}
+
+.expandedFolderBackground-1kSAf6:not(.collapsed-uGXEbi) { /* expand server folder */
+  background-color: var(--cstm-important-transparent) !important;
+  width: 80%;
+  left: 10%;
+  border-radius: 100px;
+  height: 98.5%;
+}
+
+.content-3AIQZv { /* loading box (chargement) */
+  background-color: var(--cstm-primary-dark);
+  box-shadow: 0px 0px 5px 10px var(--cstm-primary-dark);
+}
+
+.problems-CvGwpb{
+  background-color: var(--cstm-primary-dark);
+  box-shadow: 0px 0px 5px 10px var(--cstm-primary-dark);
+  width: 15%;
+  left: 42.5%;
+  bottom: 5%;
+  height: 2%;
+}
+
+.divider-2rZFJK { /* change divider color */
+  --divider-color: var(--cstm-important);
+}
+
+.divider-2rZFJK { /* change divider color */
+  --divider-color: var(--cstm-important);
+}
+
+.content-3spvdd { /* new message divider  */
+  padding-bottom: 35px;
+}
+
+
+#---new-messages-bar .unreadPill-3nEWYM {
+  right: unset !important;
+  border-radius: 10px;
+  padding: 0px 10px;
+}
+
+/* SVG "<" before nouveau */
+#---new-messages-bar .unreadPill-3nEWYM .unreadPillCap-2-iI4h {
+  display: none;
+}
+
+
+/* message field */
+.message-2CShn3 .avatar-2e8lTP {
+  border: 1px solid var(--cstm-important-secondary);
+  box-shadow: 0px 0px 10px 2px var(--cstm-important);
+}
+
+
+/* message hover */
+.messageListItem-ZZ7v6g:hover .message-2CShn3:before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  pointer-events: none;
+  width: 3px;
+  
+  background-color:  var(--cstm-important);
+  transition: 0.2s;
+}
+
+.messageListItem-ZZ7v6g {
+  border-radius: 0 20px 20px 0;
+  transition: 0.2s;
+  }
+
+.messageListItem-ZZ7v6g:hover {
+  transform-style: preserve-3d;
+  background: linear-gradient(0.25turn, rgba(0, 0, 0, 0), var(--cstm-important-transparent));
+  transition: 0.2s;
+}
+
+/* ping/mention messages */
+.mentioned-Tre-dv  {
+  border-radius: 0 20px 20px 0;
+  background: linear-gradient(0.47turn, var(--cstm-important-secondary-transparent), var(--cstm-important-transparent));
+}
+
+.mentioned-Tre-dv:before {
+  background-color: var(--cstm-important-secondary) !important;
+}
+
+/* mention name */
+.mention {
+  background-color: var(--cstm-important);
+  color: var(--cstm-important-dark);
+}
+
+
+/* user list on "home" page */
+.peopleList-2VBrVI .content-yjf30S {
+  margin-right: 10%;
+}
+
+
+/* profile add role popup */
+.container-2kTWmC {
+  background-color: var(--cstm-primary-dark);
+  border: var(--cstm-border-light);
+}
+
+.combobox-3JnTEG .container-2oNtJn .inner-2pOSmK { /* search bar role */
+  background-color: var(--cstm-primary-light);
+}
+
+.item-1Mjtru:hover { /* role list */
+  background-color: var(--cstm-primary-light) !important;
+}
+
+/* .popout-1KHNAq {
+  background-color: rgb(39, 3, 48);
+} */
+
+/* profile popup */
+.userPopoutInner-nv9Y92 {
+  background: linear-gradient(var(--cstm-box-light), var(--cstm-box-dark));
+}
+
+.userPopoutOverlayBackground-dKOOda {
+  background-color: var(--cstm-secondary);
+}
+
+.inputDefault-Ciwd-S {
+  background-color: var(--cstm-input-text-dark) !important;
+}
+
+/* "hide" now playing information tab */
+.nowPlayingColumn-1eCBCN {
+  min-width: unset;
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  width: 350px;
+  transform: translateX(250px);
+  z-index: 1;
+  background: var(--background-secondary-alt);
+  transition: all 250ms cubic-bezier(0.52, 0, 0.74, 0) 0s;
+  
+  padding: 0 20px 0 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+}
+
+.nowPlayingColumn-1eCBCN:hover, .mainContent-uDGa6R:hover .name-3BUDLf {
+  transform: none;
+}
+
+.nowPlayingColumn-1eCBCN::after {
+  content: "|||";
+  color: var(--header-primary);
+  font-size: 12px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  transition: all 250ms ease 0s;
+}
+
+.nowPlayingColumn-1eCBCN .itemCard-3Etziu,
+.nowPlayingColumn-1eCBCN .itemCard-3Etziu .inset-SbsSFp {
+  border: var(--cstm-border-light);
+}
+
+.nowPlayingColumn-1eCBCN .itemCard-3Etziu .inset-SbsSFp { 
+  background: transparent !important;
+}
+
+.nowPlayingColumn-1eCBCN .itemCard-3Etziu:hover {
+  background-color: var(--cstm-box-light) !important;
+}
+
+/* friends search bar */
+.searchBar-2aylmZ {
+  background-color: var(--cstm-important-transparent);
+}
+
+/* server user list */
+.member-2gU6Ar {
+  margin: 3px;
+}
+
+.member-2gU6Ar:hover {
+  background-color: var(--cstm-important-transparent);
+}
+
+.membersGroup-2eiWxl { /* title */
+  color: var(--cstm-important);
+}
+
+/* dropdown menu (don't know what ??) */ 
+.popout-15UxD6 {
+  background-color: var(--cstm-primary-dark-opaque);
+}
+
+/* popout-15UxD6 none-1rXy4P scrollerBase-1Pkza4 */
+/* popout-15UxD6 none-1rXy4P scrollerBase-1Pkza4 */
+
+/*affichage du code dans les message*/
+.hljs,
+.hljs[class~="c"],
+.hljs[class~="c++"],
+.hljs[class~="cpp"],
+.hljs[class~="cs"],
+.hljs[class~="java"],
+.hljs[class~="sql"],
+.hljs[class~="ruby"],
+.hljs[class~="coffee"],
+.hljs[class~="xl"],
+.hljs[class~="py"],
+.hljs[class~="python"],
+.hljs[class~="html"],
+.hljs[class~="md"],
+.hljs[class~="markdown"],
+.hljs[class~="bash"],
+.hljs[class~="js"],
+.hljs[class~="javascript"],
+.hljs[class~="css"],
+.hljs[class~="vb"],
+.hljs[class~="visualbasic"],
+.hljs[class~="lua"],
+.hljs[class~="php"],
+.hljs[class~="swift"],
+.hljs[class~="makefile"],
+.hljs[class~="go"],
+.hljs[class~="ini"],
+.hljs[class~="rs"],
+.hljs[class~="rust"],
+.hljs[class~="prolog"],
+.hljs[class~="ts"],
+.hljs[class~="typescript"],
+.hljs[class~="http"],
+.hljs[class~="json"],
+.hljs[class~="xml"],
+.hljs[class~="less"],
+.hljs[class~="toml"],
+.hljs[class~="elixir"],
+.hljs[class~="properties"] {
+  padding: 6px 5px 2px 5px !important;
+  background-color: #0000004f !important; /*modif le background du code*/
+}
+
+.hljs[class~="c"]::before,
+.hljs[class~="c++"]::before,
+.hljs[class~="cpp"]::before,
+.hljs[class~="cs"]::before,
+.hljs[class~="java"]::before,
+.hljs[class~="sql"]::before,
+.hljs[class~="ruby"]::before,
+.hljs[class~="coffee"]::before,
+.hljs[class~="xl"]::before,
+.hljs[class~="py"]::before,
+.hljs[class~="python"]::before,
+.hljs[class~="html"]::before,
+.hljs[class~="md"]::before,
+.hljs[class~="markdown"]::before,
+.hljs[class~="bash"]::before,
+.hljs[class~="js"]::before,
+.hljs[class~="javascript"]::before,
+.hljs[class~="css"]::before,
+.hljs[class~="vb"]::before,
+.hljs[class~="visualbasic"]::before,
+.hljs[class~="lua"]::before,
+.hljs[class~="php"]::before,
+.hljs[class~="swift"]::before,
+.hljs[class~="makefile"]::before,
+.hljs[class~="go"]::before,
+.hljs[class~="ini"]::before,
+.hljs[class~="rs"]::before,
+.hljs[class~="rust"]::before,
+.hljs[class~="prolog"]::before,
+.hljs[class~="ts"]::before,
+.hljs[class~="typescript"]::before,
+.hljs[class~="http"]::before,
+.hljs[class~="json"]::before,
+.hljs[class~="xml"]::before,
+.hljs[class~="less"]::before,
+.hljs[class~="toml"]::before,
+.hljs[class~="ex"]::before,
+.hljs[class~="exs"]::before,
+.hljs[class~="elixir"]::before,
+.hljs[class~="properties"]::before {
+  width: auto !important;
+  height: 15px !important;
+  position: relative !important;
+  display: -webkit-box !important;
+  margin-top: -6px !important;
+  margin-bottom: 3px !important;
+  margin-left: -4px !important;
+  margin-right: -5px !important;
+  padding-top: 2px;
+  color: #fff !important;
+  border-top-left-radius: 4px !important;
+  border-top-right-radius: 4px !important;
+  border-bottom: 0px !important;
+  line-height: 15px !important;
+}
+
+.hljs[class~="c"]::before {
+  content: " C" !important;
+  background: rgba(85, 85, 85, 0.5) !important;
+}
+.hljs[class~="c++"]::before {
+  content: " C++" !important;
+  background: rgba(62, 112, 250, 0.3) !important;
+}
+.hljs[class~="cpp"]::before {
+  content: " C++" !important;
+  background: rgba(243, 75, 125, 0.3) !important;
+}
+.hljs[class~="cs"]::before {
+  content: " C#" !important;
+  background: rgba(0, 140, 21, 0.3) !important;
+}
+.hljs[class~="js"]::before,
+.hljs[class~="javascript"]::before {
+  content: " Javascript" !important;
+  background: rgba(22, 94, 171, 0.3) !important;
+}
+.hljs[class~="css"]::before {
+  content: " Cascading Style Sheet" !important;
+  background: rgba(171, 111, 22, 0.3) !important;
+}
+.hljs[class~="bash"]::before {
+  content: " Bash" !important;
+  background: rgba(171, 22, 99, 0.3) !important;
+}
+.hljs[class~="markdown"]::before,
+.hljs[class~="md"]::before {
+  content: " Markdown" !important;
+  background: rgba(171, 46, 22, 0.3) !important;
+}
+.hljs[class~="html"]::before {
+  content: " HTML" !important;
+  background: rgba(22, 171, 111, 0.3) !important;
+}
+.hljs[class~="xl"]::before {
+  content: " eXtensible Language" !important;
+  background: rgba(72, 114, 168, 0.3) !important;
+}
+.hljs[class~="coffee"]::before {
+  content: " Coffee (Javascript)" !important;
+  background: rgba(58, 27, 27, 0.3) !important;
+}
+.hljs[class~="ruby"]::before {
+  content: " Ruby" !important;
+  background: rgba(231, 62, 62, 0.3) !important;
+}
+.hljs[class~="sql"]::before {
+  content: " SQL" !important;
+  background: rgba(68, 116, 202, 0.3) !important;
+}
+.hljs[class~="java"]::before {
+  content: " Java" !important;
+  background: rgba(235, 45, 47, 0.3) !important;
+}
+.hljs[class~="py"]::before,
+.hljs[class~="python"]::before {
+  content: " Python" !important;
+  background: rgba(22, 34, 171, 0.3) !important;
+}
+.hljs[class~="vb"]::before,
+.hljs[class~="visualbasic"]::before {
+  content: " Visual Basic" !important;
+  background: rgba(131, 151, 0, 0.3) !important;
+}
+.hljs[class~="lua"]::before {
+  content: " Lua" !important;
+  background: rgba(46, 204, 113, 0.3) !important;
+}
+.hljs[class~="php"]::before {
+  content: " Php" !important;
+  background: rgba(110, 129, 182, 0.3) !important;
+}
+.hljs[class~="swift"]::before {
+  content: " Swift" !important;
+  background: rgba(253, 120, 55, 0.3) !important;
+}
+.hljs[class~="makefile"]::before {
+  content: " Makefile" !important;
+  background: rgba(138, 43, 15, 0.3) !important;
+}
+.hljs[class~="go"]::before {
+  content: " Go" !important;
+  background: rgba(117, 206, 222, 0.3) !important;
+}
+.hljs[class~="ini"]::before {
+  content: " ini" !important;
+  background: rgba(90, 117, 192, 0.3) !important;
+}
+.hljs[class~="rs"]::before,
+.hljs[class~="rust"]::before {
+  content: " Rust" !important;
+  background: rgba(176, 41, 9, 0.3) !important;
+}
+.hljs[class~="prolog"]::before {
+  content: " Prolog" !important;
+  background: rgba(239, 77, 37, 0.3) !important;
+}
+.hljs[class~="ts"]::before,
+.hljs[class~="typescript"]::before {
+  content: " TypeScript" !important;
+  background: rgba(3, 50, 76, 0.3) !important;
+}
+.hljs[class~="http"]::before {
+  content: " HTTP" !important;
+  background: rgba(97, 143, 16, 0.3) !important;
+}
+.hljs[class~="json"]::before {
+  content: " Json" !important;
+  background: rgba(16, 143, 102, 0.3) !important;
+}
+.hljs[class~="xml"]::before {
+  content: " XML" !important;
+  background: rgba(132, 68, 175, 0.3) !important;
+}
+.hljs[class~="less"]::before {
+  content: " Less" !important;
+  background: rgba(29, 54, 93, 0.3) !important;
+}
+.hljs[class~="toml"]::before {
+  content: " Toml" !important;
+  background: rgba(63, 129, 193, 0.3) !important;
+}
+.hljs[class~="ex"]::before,
+.hljs[class~="exs"]::before,
+.hljs[class~="elixir"]::before {
+  content: " Elixir" !important;
+  background: rgba(65, 24, 101, 0.3) !important;
+}
+.hljs[class~="properties"]::before {
+  content: " Properties" !important;
+  background: rgba(38, 95, 12, 0.3) !important;
+}
